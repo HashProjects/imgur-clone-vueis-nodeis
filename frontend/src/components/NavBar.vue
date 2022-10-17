@@ -1,6 +1,9 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Imgur Clone</a>
+      <a class="navbar-brand" href="#">
+    <img src="../assets/cameraBuddy.png" width="80" height="80" class="d-inline-block" alt="">
+    Pictografy
+  </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -13,21 +16,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/">
-              Home
-              <span class="sr-only">(current)</span>
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="login">LogIn</router-link>
-          </li>
-          <li class="nav-item">
-          <router-link class="nav-link" to="register">Register</router-link>
-        </li>
+        <ul class="navbar-nav mx-auto">
+          <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+  </form>
         </ul>
-        <span class="navbar-text">@Elliot_F</span>
+        <button class="btn btn-info mr-3" type="button">Sign Up</button>
+        <button class="btn btn-info" type="button">Sign In</button>
       </div>
     </nav>
   </template>
